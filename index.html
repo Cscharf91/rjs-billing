@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>RJS Billing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="nav-grid short-grid">
+        <h2 class="logo">RJS Billing</h2>
+        <div class="mobile-menu">
+            <i class="fa fa-bars"></i>
+        </div>
+        <div class="nav-list hidden-menu">
+            <p><a href="#about">About</a></p>
+            <p><a href="#contact">Contact</a></p>
+            <p><a href="#footer">Pay Bill</a></p>
+            <a href="#">
+                <button class="quote-btn">GET A QUOTE</button>
+            </a>
+        </div>
+      </nav>
+      <div class="hero" id="about">
+        <h2>About Us</h2>
+      </div>
+      <article class="main-content">
+        <h2 class="article-title">RJS Billing Services, LLC</h2>
+        <p class="new-sect">Our Mission</p>
+        <p>
+          Your time is important. With such valued services, your energy shouldn't have to be directed towards collections.
+          At RJS Billing, we look foward to recovering and resolving these situations for you. With our team of devoted agents,
+          you can be sure our efforts will be persistent towards relieving you of that stress.
+        </p>
+        <p class="new-sect">Experience</p>
+        <p>
+          At RJS Billing, you can expect to find a team of highly trained, HIPAA, compliant debt collectors that specialize in 
+          medical billing. With over a decade of experience and a refined strategy, we leave both our clients and debtors satisfied.
+        </p>
+        <p class="new-sect">Determination</p>
+        <p>
+          We understand that this process is stressful for both the clients and debtors. We make it a point to be thoughtful yet
+          persistent so that a resolution can be attained.
+        </p>
+      </article>
+      <div class="hero" id="contact">
+        <h2>Contact Us</h2>
+      </div>
+      <article class="main-content">
+        <p class="new-sect left-text">Email:</p>
+        <p class="left-text">
+         <a href="mailto: RJSBillings@gmail.com">RJSBillings@gmail.com</a>
+        </p>
+        <p class="left-text">
+            <a href="mailto: Mike.RJSBilling@gmail.com">Mike.RJSBilling@gmail.com</a>
+           </p>
+        <p class="new-sect left-text">Phone:</p>
+        <p class="left-text">
+          (845)219-5443
+        </p>
+        <p class="new-sect left-text">Address for Payment:</p>
+        <p class="left-text">
+          P.O. Box 1778
+        </p>
+        <p class="left-text">
+          New City, NY 10956
+        </p>
+      </article>
+      <footer id="footer">
+        <p>Website is under construction. Client features are coming soon.</p>
+        <p>© 2020 RJS Billing, LLC</p>
+      </footer>
+</body>
+<script>
+    
+    const menu = document.querySelector('.mobile-menu');
+    const grid = document.querySelector('.nav-grid');
+    const navList = document.querySelector('.nav-list')
+    menu.addEventListener('click', () => {
+        console.log('clicked!');
+        menu.classList.toggle('active-menu');
+        navList.classList.toggle('hidden-menu');
+        grid.classList.toggle('short-grid');
+        grid.classList.toggle('long-grid');
+    })
+</script>
